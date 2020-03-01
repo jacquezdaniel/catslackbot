@@ -36,6 +36,7 @@ function handleMessage(message) {
   }
 }
 
+// Gets random fact from cat-fact
 function getRandomCat() {
   axios.get("https://cat-fact.herokuapp.com/facts/random").then(res => {
     const cat = res.data.text;
